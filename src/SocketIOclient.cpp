@@ -196,6 +196,7 @@ void SocketIOclient::handleCbEvent(WStype_t type, uint8_t * payload, size_t leng
         case WStype_FRAGMENT_FIN:
         case WStype_PING:
         case WStype_PONG:
+        case WStype_ERROR:
             break;
     }
 }
